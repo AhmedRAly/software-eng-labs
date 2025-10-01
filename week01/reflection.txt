@@ -1,0 +1,5 @@
+1-In this lab I learned and was able to navigate linux with all the important commands that help make files, directories, etc
+2-I also learned the abilty and commands I have to change the perms of a file to make it read only, etc
+3-Finally I also learned skills that help me run some bash commands
+
+So moving on I am excited to learn some Git but at the same time I am still getting used to all these commands and sytax so thats a bit stressful

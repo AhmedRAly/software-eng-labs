@@ -1,0 +1,5 @@
+#!/bin/bash
+ORIG=$PWD
+cd "$1" || exit 1
+rm -f *.tmp
+cd "$ORIG"
