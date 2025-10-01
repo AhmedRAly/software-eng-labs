@@ -1,15 +1,23 @@
+// Ahmed Aly, 400557252
+// SE2XC3
+//This code is a reflection of what I learnt throughout the past portion of the lab 
+
 #include <stdio.h>
-#include <stdlib.h>
 #include <unistd.h>
 
+//Function that prints my reflection, questions followed by the answer
 int main() {
 
-
+//Printing my personal info
     printf("Ahmed Aly\n"); fflush(stdout); sleep(1);
     printf("Student Number: 123456789\n"); fflush(stdout); sleep(1);
     printf("Course: SE2XC3\n\n"); fflush(stdout); sleep(1);
 
     // Reflection
+
+    //Used the "/n appropiatlly to leave spaces and make the format orginized"
+    //Made the delay between the printing as mentioned in the intructions 
+    //Added more delay for the questions so that it gives it the effect asking then answering
     printf("What do you think is the most useful thing you’ve learned so far in this course?\n"); fflush(stdout); sleep(2);
     printf("I think the most useful thing I have learned so far is Linux commands and file permissions,\n"
         "more specifically how they work beyond just the syntax.\n\n"); fflush(stdout); sleep(1);
@@ -29,5 +37,5 @@ int main() {
     printf("VS Code is very user-friendly and helps show any errors and sugguestions so it makes it great for debugging,\n"
          "how ever it is not always available to use like other IDEs and or text editors like vim.\n\n"); fflush(stdout); sleep(1);
 
-    return EXIT_SUCCESS;
+    return 0;
 }

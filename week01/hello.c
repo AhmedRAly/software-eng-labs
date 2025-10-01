@@ -1,7 +1,10 @@
+// Ahmed Aly, 400557252
+// SE2XC3
+//This code greets the user
+
 #include <stdio.h>
-#include <stdlib.h>
 
 int main() {
     puts("Hello, World!");
-    return EXIT_SUCCESS;
+    return 0;
 }
