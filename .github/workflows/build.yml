@@ -19,6 +19,5 @@ jobs:
 
     - name: Build week01
       run: make -C week01 all
-
     - name: Build week02
       run: make -C week02 all
