@@ -1,21 +1,24 @@
-name: build script for hello.c		
+name: SE2XC3 Labs Build
 
-on:							
+on:
   push:
-    branches: [ "main" ]			
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  build:						
-    runs-on: ubuntu-latest			
+  build:
+    runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4		
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-      - name: build hello			
-        run: gcc -o hello hello.c		
+    - name: Install build tools
+      run: sudo apt-get update -y && sudo apt-get install -y build-essential
 
-      - name: upload binary			
-        uses: actions/upload-artifact@v4	
-        with:
-          name: Hello World			
-          path: ./hello				
+    - name: Build week01
+      run: make -C week01 all
 
+    - name: Build week02
+      run: make -C week02 all
