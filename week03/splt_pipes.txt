@@ -1,0 +1,11 @@
+cat gutenberg/english/*.txt | ./splt | sort | uniq
+
+cat gutenberg/english/*.txt | ./splt | sort | uniq | wc -l
+
+cat gutenberg/english/*.txt | ./splt | sort | uniq | tee lexicon.txt
+
+cat gutenberg/english/*.txt | ./splt | sort | uniq | head -n 1
+
+cat gutenberg/english/*.txt | ./splt | sort | uniq | tail -n 1
+
+cat gutenberg/english/*.txt | ./splt | sort | uniq | head -n 9998 | tail -n 1

@@ -1,0 +1,9 @@
+cat gutenberg/spanish/*.txt | ./splt | wc | ./wstat
+
+cat gutenberg/spanish/*.txt | ./splt | wc | ./wstat
+
+cat gutenberg/spanish/*.txt | ./splt | head -n 100 | wc | ./wstat
+
+cat gutenberg/spanish/*.txt | ./splt | tail -n 100 | wc | ./wstat
+
+cat gutenberg/spanish/*.txt | ./splt | sort | uniq | wc | ./wstat

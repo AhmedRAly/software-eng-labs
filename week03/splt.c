@@ -1,6 +1,6 @@
-// Ahmed Aly, 400557252
-// SE2XC3
-// This code takes a standard input and outputs it, this is does through texts after file name or a txt file, whihc prints
+//Ahmed Aly, 400557252
+//SE2XC3
+//This code takes a standard input and outputs it, this is does through texts after file name or a txt file, whihc prints
 //it word by word in a seperate line, and sorts it based on diffrent prompts
 
 
