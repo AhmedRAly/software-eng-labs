@@ -1,0 +1,28 @@
+# Ahmed Aly, 400557252
+# SE2XC3
+# Exercise 3.2.2
+
+# Question a: What does the script below do?
+
+# The script will take the first command, which is the first set of characters
+# so "ls" and it will execute it
+
+# So if I run "./di ls -l", it will only execute "ls" (not "ls -l")
+# because the "-l" part gets ignored because the script only uses $1, and "-l" is $2
+
+#So if I want to run the full command I can either change the "$1" to " "$@" " or "$1 $2"
+#doing this will let us run  "./di ls -l" the whole command, not only "ls"
+
+
+# Question b: What does the sequence of commands send to stdout?
+
+# Initial guess: a 1 a1C 1*10
+# $A and $B are alone so its simple strings getting printed, then since there is ${B} next to the $A
+# It will print both the seperate variables next to eachother, but then there a C next
+# to it so that will print as a "C" because there is {} around the B 
+# For D will be $B*10 so "1*10", rhis is becasue "*" is not possible to be a variable name
+# So bash doesnt recognize the B*10 as a variable , and it wont do math, so its just seen as a string
+
+# The actual output is: a 1 a1C 1*10
+# So My guess was correct
+

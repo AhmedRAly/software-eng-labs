@@ -1,0 +1,32 @@
+#!/bin/bash
+# Ahmed Aly, 400557252
+# SE2XC3
+# This script checks each input and tells if its a directory, a file, or unknown
+
+# If the user did not enter anything after the program name then it will print the usage and exit
+if [ $# -eq 0 ]; then
+
+    echo "Usage: $0 <paths>" >&2
+    exit 1
+fi
+
+# Goes through each input that the user enters
+for item in "$@"; do
+
+# Checks if it is a directory
+    if [ -d "$item" ]; then
+
+        echo "directory:  $item"
+    
+# Checks if it is a file
+    elif [ -f "$item" ]; then
+
+        echo "file:       $item"
+    
+# If its not a file or directory then it is unknown
+    else
+
+        echo "unknown:    $item"
+    fi
+
+done

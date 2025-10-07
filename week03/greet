@@ -1,17 +1,19 @@
 #!/bin/bash
 # Ahmed Aly, 400557252
 # SE2XC3
-# This script takes 3 inputs from the user and greets the person
+# This script takes 3 inputs from the user and greets them
 
 if [ $# -ne 3 ]; then
 
-    echo "Usage: $0 <title> <first_name> <last_name>"
+    echo "Usage: $0 <title> <first name> <last name>"
     exit 1
+    
     
 fi
 
 TITLE=$1
 FIRST_NAME=$2
 LAST_NAME=$3
+
 
 echo "Hello $TITLE $LAST_NAME! May I call you $FIRST_NAME?"

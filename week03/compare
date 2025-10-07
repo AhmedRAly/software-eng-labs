@@ -1,0 +1,19 @@
+#!/bin/bash
+# Ahmed Aly, 400557252
+# SE2XC3
+# This script compares two arguments and prints the smaller one
+
+# Checks to see if only 2 words were inputed, if not and/or if they are the same, if so exit
+if [ $# -ne 2 ] || [ "$1" = "$2" ]; then
+
+    echo "Error: Need exactly 2 different words" >&2
+    exit 1
+
+# Checks if the first word is smaller in chars, if so it prints it, else prints the second word
+elif [ "$1" \< "$2" ]; then
+
+    echo "$1"
+    
+else
+    echo "$2"
+fi

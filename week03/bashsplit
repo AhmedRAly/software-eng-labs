@@ -1,0 +1,15 @@
+#!/bin/bash
+# Ahmed Aly, 400557252
+# SE2XC3
+# This script reads from standard input and prints each word on its own line
+
+# If the user enters anything after the program name then it will print the usage and exit
+if [ $# -ne 0 ]; then
+
+    echo "Usage: $0" >&2
+    exit 1
+
+fi
+
+# Takes the stdin and replaces any blank space with new lines, and removes empty lines
+tr -s '[:space:]' '\n' | grep -v '^$'
