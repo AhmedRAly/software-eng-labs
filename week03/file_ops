@@ -1,0 +1,27 @@
+#!/bin/bash
+# Ahmed Aly, 400557252
+# SE2XC3
+# This script checks files and shows information about them
+
+if [ -f "art_of_war.txt" ]; then
+
+    echo "art_of_war.txt exists"
+    
+    FILE_SIZE=$(wc -c < art_of_war.txt)
+    echo "File size: $FILE_SIZE bytes"
+    
+    LINE_COUNT=$(wc -l < art_of_war.txt)
+    echo "Line count: $LINE_COUNT"
+    
+    WORD_COUNT=$(wc -w < art_of_war.txt)
+    echo "Word count: $WORD_COUNT"
+    
+else
+
+    echo "art_of_war.txt does not exist"
+    
+fi
+
+echo "Files in current directory:"
+
+ls -la

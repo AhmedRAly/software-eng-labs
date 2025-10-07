@@ -1,0 +1,19 @@
+#!/bin/bash
+# Ahmed Aly, 400557252
+# SE2XC3
+# This script shows how to use variables in bash
+
+
+NAME=Dina
+ADDRESS='Hamilton, Ontario'
+AGE=23
+
+echo $NAME
+echo $ADDRESS
+echo $AGE
+
+echo "$NAME lives in $ADDRESS and is $AGE years old"
+
+echo "$NAME Hashem"
+echo '$NAME Hashem'
+echo "\$NAME Hashem"

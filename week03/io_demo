@@ -1,0 +1,24 @@
+#!/bin/bash
+# Ahmed Aly, 400557252
+# SE2XC3
+# This script reads text and counts things about it
+
+echo "Enter some text (press Ctrl+D when done):"
+
+TEXT=$(cat)
+
+CHAR_COUNT=${#TEXT}
+
+WORD_COUNT=$(echo "$TEXT" | wc -w)
+
+LINE_COUNT=$(echo "$TEXT" | wc -l)
+
+
+echo "--- Text Statistics ---"
+
+echo "Characters: $CHAR_COUNT"
+echo "Words: $WORD_COUNT"
+echo "Lines: $LINE_COUNT"
+
+echo "$TEXT" > output.txt
+echo "Text saved to output.txt"

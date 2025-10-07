@@ -1,0 +1,26 @@
+#!/bin/bash
+# Ahmed Aly, 400557252
+# SE2XC3
+# This script does different things with strings
+
+echo "Enter your first name:"
+read FIRST_NAME
+echo "Enter your last name:"
+read LAST_NAME
+
+FULL_NAME="$FIRST_NAME $LAST_NAME"
+
+
+NAME_LENGTH=${#FULL_NAME}
+
+
+UPPER_NAME=$(echo $FULL_NAME | tr '[:lower:]' '[:upper:]')
+
+
+LOWER_NAME=$(echo $FULL_NAME | tr '[:upper:]' '[:lower:]')
+
+
+echo "Full name: $FULL_NAME"
+echo "Name length: $NAME_LENGTH characters"
+echo "Uppercase: $UPPER_NAME"
+echo "Lowercase: $LOWER_NAME"
